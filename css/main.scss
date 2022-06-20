@@ -1,0 +1,415 @@
+body {
+    margin: 0;
+    background-color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+
+    .container {
+        text-align: center;
+    }
+
+    .logo {
+        height: 200px;
+        margin-bottom: 40px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-around;
+
+            li a {
+                list-style-type: none;
+                
+                font-size: 30px;
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    color: #C29050;
+                }
+            }
+        }
+
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }
+
+}
+
+.offer-menu {
+    .horizontal-line {
+        height: 0px;
+        color: #858282;
+    }
+
+    .container {
+        display: flex;
+        color: white;
+        justify-content: space-around;
+        text-align: center;
+
+        align-items: center;
+
+        .menu {
+            font-size: 25px;
+            font-weight: bold;
+            padding: 10px;
+            width: calc(33%);
+
+            .menu-des {
+                font-size: 15px;
+                font-weight: normal;
+            }
+        }
+
+        .vertical-line {
+            font-size: 45px;
+            color: #858282;
+        }
+
+    }
+}
+
+.hero {
+    .container {
+        display: flex;
+        box-sizing: border-box;
+
+        .hero-img {
+            width: 40%;
+        }
+
+        .hero-tag {
+            margin: 14%;
+            margin-left: 20%;
+            font-size: 150px;
+            color: white;
+            box-sizing: border-box;
+            font-family: cursive;
+            text-shadow: 10px 7px rgb(66, 65, 65);
+
+            span {
+                color: #C29050;
+            }
+        }
+    }
+}
+
+.stylish-pick {
+    .title-tag {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin: 30px 0;
+
+        .horizontal-left,
+        .horizontal-right {
+            width: 38%;
+            height: 0px;
+            color: #646464;
+            margin: 20px 0;
+        }
+
+        .tag-text {
+            color: #C29050;
+            font-size: 40px;
+            margin-top: -3px;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .accessories {
+            position: relative;
+            text-align: center;
+            color: black;
+            width: 50%;
+
+            .accessories-img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .accessories-txt {
+                font-size: 45px;
+                position: absolute;
+                top: 45px;
+                left: 45px;
+                text-align: left;
+                font-style: italic;
+                font-weight: bold;
+
+                .accessories-a {
+                    font-size: 25px;
+                    color: #C29050;
+
+                    &:hover {
+                        transition: 3s;
+
+                    }
+                }
+            }
+        }
+
+        // img {
+        //     width: 49%;
+        // }
+    }
+}
+
+.designer-dress {
+    .title-tag {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin: 30px 0;
+
+        .horizontal-left,
+        .horizontal-right {
+            width: 38%;
+            height: 0px;
+            color: #646464;
+            margin: 20px 0;
+        }
+
+        .tag-text {
+            color: #C29050;
+            font-size: 40px;
+            margin-top: -10px;
+        }
+    }
+
+    .container {
+        display: flex;
+
+        .look {
+            width: 100%;
+        }
+    }
+}
+
+.footerbar {
+    .container {
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1fr;
+        padding: 25px;
+        gap: 100px;
+
+        .Nname {
+            color: #646464;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .nav-tool {
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .nav-item {
+                padding-bottom: 25px;
+                font-size: 20px;
+            }
+        }
+
+        .footer-text {
+            color: #646464;
+            font-size: 25px;
+        }
+
+        #mailid {
+            width: 86%;
+            height: 40px;
+            font-size: 20px;
+            margin-top: 10px;
+            background-color: rgb(78, 78, 78);
+            color: white;
+            padding-left: 10px;
+            border: none;
+        }
+
+        #submit {
+            color: white;
+            background-color: #C29050;
+            margin-top: 30px;
+            // height: 40px;
+            font-size: 22px;
+            padding: 10px;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+        }
+
+        .icon_container {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            gap: 3px;
+
+            .icon {
+                font-size: 60px;
+            }
+        }
+
+        .text {
+            color: #646464;
+            text-align: right;
+            font-size: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .navbar {
+
+        .logo {
+            height: 150px;
+            margin-bottom: 40px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li a {
+                list-style-type: none;
+                padding: 0px 10px;
+                font-size: 20px;
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    color: #C29050;
+                }
+            }
+        }
+    }
+}
+
+
+    @media only screen and (min-width: 1080px) {
+
+
+        .offer-menu {
+            .container {
+
+                .menu {
+                    font-size: 35px;
+                    padding: 20px;
+
+                    .menu-des {
+                        font-size: 25px;
+                    }
+                }
+
+                .vertical-line {
+                    font-size: 65px;
+                    color: #858282;
+                }
+
+            }
+        }
+
+        .footerbar {
+            .container {
+                display: flex;
+                padding: 55px;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+
+                .Nname {
+                    margin-bottom: 30px;
+                    font-size: 45px;
+                }
+
+                .nav-tool {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-left: 20px;
+                    justify-content: center;
+
+                    .nav-item {
+                        padding: 20px 60px 60px;
+                        font-size: 30px;
+                        list-style-type: none;
+                    }
+                }
+
+                .footer-text {
+                    color: #646464;
+                    font-size: 40px;
+                }
+
+                #mailid {
+                    width: 25%;
+                    height: 50px;
+                    font-size: 30px;
+                    margin-top: 20px;
+                    padding-left: 10px;
+                }
+
+                #submit {
+                    margin-top: 30px;
+                    font-size: 32px;
+                    padding: 30px;
+                    letter-spacing: 2px;
+                    margin-bottom: 40px;
+                }
+
+                .icon_container {
+                    display: flex;
+                    justify-content: center;
+                    margin: 30px 0;
+                    gap: 30px;
+
+                    .icon {
+                        font-size: 100px;
+                    }
+                }
+
+                .text {
+                    font-size: 35px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .stylish-pick {
+            .title-tag {
+
+                .horizontal-left,
+                .horizontal-right {
+                    width: 42%;
+                }
+
+                .tag-text {
+                    font-size: 50px;
+                }
+
+            }
+        }
+
+        .designer-dress {
+            .title-tag {
+
+                .horizontal-left,
+                .horizontal-right {
+                    width: 42%;
+                }
+
+                .tag-text {
+                    font-size: 50px;
+                }
+            }
+        }
+
+    }

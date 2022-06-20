@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  background-color: #000000;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar .container {
+  text-align: center;
+}
+.navbar .logo {
+  height: 200px;
+  margin-bottom: 40px;
+}
+.navbar nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar nav ul li a {
+  list-style-type: none;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+.navbar nav ul li a:hover {
+  color: #C29050;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+.offer-menu .horizontal-line {
+  height: 0px;
+  color: #858282;
+}
+.offer-menu .container {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+.offer-menu .container .menu {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  width: 33%;
+}
+.offer-menu .container .menu .menu-des {
+  font-size: 15px;
+  font-weight: normal;
+}
+.offer-menu .container .vertical-line {
+  font-size: 45px;
+  color: #858282;
+}
+
+.hero .container {
+  display: flex;
+  box-sizing: border-box;
+}
+.hero .container .hero-img {
+  width: 40%;
+}
+.hero .container .hero-tag {
+  margin: 14%;
+  margin-left: 20%;
+  font-size: 150px;
+  color: white;
+  box-sizing: border-box;
+  font-family: cursive;
+  text-shadow: 10px 7px rgb(66, 65, 65);
+}
+.hero .container .hero-tag span {
+  color: #C29050;
+}
+
+.stylish-pick .title-tag {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 30px 0;
+}
+.stylish-pick .title-tag .horizontal-left,
+.stylish-pick .title-tag .horizontal-right {
+  width: 38%;
+  height: 0px;
+  color: #646464;
+  margin: 20px 0;
+}
+.stylish-pick .title-tag .tag-text {
+  color: #C29050;
+  font-size: 40px;
+  margin-top: -3px;
+}
+.stylish-pick .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.stylish-pick .container .accessories {
+  position: relative;
+  text-align: center;
+  color: black;
+  width: 50%;
+}
+.stylish-pick .container .accessories .accessories-img {
+  width: 100%;
+  height: 100%;
+}
+.stylish-pick .container .accessories .accessories-txt {
+  font-size: 45px;
+  position: absolute;
+  top: 45px;
+  left: 45px;
+  text-align: left;
+  font-style: italic;
+  font-weight: bold;
+}
+.stylish-pick .container .accessories .accessories-txt .accessories-a {
+  font-size: 25px;
+  color: #C29050;
+}
+.stylish-pick .container .accessories .accessories-txt .accessories-a:hover {
+  transition: 3s;
+}
+
+.designer-dress .title-tag {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 30px 0;
+}
+.designer-dress .title-tag .horizontal-left,
+.designer-dress .title-tag .horizontal-right {
+  width: 38%;
+  height: 0px;
+  color: #646464;
+  margin: 20px 0;
+}
+.designer-dress .title-tag .tag-text {
+  color: #C29050;
+  font-size: 40px;
+  margin-top: -10px;
+}
+.designer-dress .container {
+  display: flex;
+}
+.designer-dress .container .look {
+  width: 100%;
+}
+
+.footerbar .container {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+  padding: 25px;
+  gap: 100px;
+}
+.footerbar .container .Nname {
+  color: #646464;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.footerbar .container .nav-tool {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footerbar .container .nav-tool .nav-item {
+  padding-bottom: 25px;
+  font-size: 20px;
+}
+.footerbar .container .footer-text {
+  color: #646464;
+  font-size: 25px;
+}
+.footerbar .container #mailid {
+  width: 86%;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 10px;
+  background-color: rgb(78, 78, 78);
+  color: white;
+  padding-left: 10px;
+  border: none;
+}
+.footerbar .container #submit {
+  color: white;
+  background-color: #C29050;
+  margin-top: 30px;
+  font-size: 22px;
+  padding: 10px;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+.footerbar .container .icon_container {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  gap: 3px;
+}
+.footerbar .container .icon_container .icon {
+  font-size: 60px;
+}
+.footerbar .container .text {
+  color: #646464;
+  text-align: right;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 786px) {
+  .navbar .logo {
+    height: 150px;
+    margin-bottom: 40px;
+  }
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar ul li a {
+    list-style-type: none;
+    padding: 0px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  .navbar ul li a:hover {
+    color: #C29050;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .offer-menu .container .menu {
+    font-size: 35px;
+    padding: 20px;
+  }
+  .offer-menu .container .menu .menu-des {
+    font-size: 25px;
+  }
+  .offer-menu .container .vertical-line {
+    font-size: 65px;
+    color: #858282;
+  }
+
+  .footerbar .container {
+    display: flex;
+    padding: 55px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .footerbar .container .Nname {
+    margin-bottom: 30px;
+    font-size: 45px;
+  }
+  .footerbar .container .nav-tool {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    justify-content: center;
+  }
+  .footerbar .container .nav-tool .nav-item {
+    padding: 20px 60px 60px;
+    font-size: 30px;
+    list-style-type: none;
+  }
+  .footerbar .container .footer-text {
+    color: #646464;
+    font-size: 40px;
+  }
+  .footerbar .container #mailid {
+    width: 25%;
+    height: 50px;
+    font-size: 30px;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+  .footerbar .container #submit {
+    margin-top: 30px;
+    font-size: 32px;
+    padding: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+  .footerbar .container .icon_container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 30px;
+  }
+  .footerbar .container .icon_container .icon {
+    font-size: 100px;
+  }
+  .footerbar .container .text {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .stylish-pick .title-tag .horizontal-left,
+.stylish-pick .title-tag .horizontal-right {
+    width: 42%;
+  }
+  .stylish-pick .title-tag .tag-text {
+    font-size: 50px;
+  }
+
+  .designer-dress .title-tag .horizontal-left,
+.designer-dress .title-tag .horizontal-right {
+    width: 42%;
+  }
+  .designer-dress .title-tag .tag-text {
+    font-size: 50px;
+  }
+}/*# sourceMappingURL=main.css.map */

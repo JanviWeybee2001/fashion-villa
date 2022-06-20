@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Villa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="#"><img src="images/logo.jpg" alt="logo" class="logo"></a>
+
+            <!-- <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="open nevbar"> -->
+
+            <nav>
+                <!-- <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Exit"> -->
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">HOME</a></li>
+                    <li><a href="#">DRESSES</a></li>
+                    <li><a href="#">EVENING DRESSES</a></li>
+                    <li><a href="#">SHOES</a></li>
+                    <li><a href="#">ACCESSORIES</a></li>
+                    <li><a href="#">SALE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="offer-menu">
+        <hr class="horizontal-line" style="margin-top: 40px;">
+        <div class="container">
+            <div class="menu">FREE UK DELIVERY
+                <br>
+                <span class="menu-des">Coming soon</span>
+            </div>
+            <span class="vertical-line"> | </span>
+            <div class="menu">GET <span style="font-size: 25px;">10%</span> YOUR <span
+                    style="font-size: 25px;">FIRST</span> ORDER
+                <br>
+                <span class="menu-des">Coming soon</span>
+            </div>
+            <span class="vertical-line"> | </span>
+            <div class="menu"><span style="font-size: 25px;">15%</span> DISCOUNT FOR STUDENT
+                <br>
+                <span class="menu-des">Coming soon</span>
+            </div>
+        </div>
+        <hr class="horizontal-line">
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <img src="images/hero.jpg" alt="hero-image" class="hero-img">
+
+            <div class="hero-tag">
+                <span>Coming</span><br> Soon
+            </div>
+        </div>
+    </section>
+
+    <section class="stylish-pick">
+        <div class="title-tag">
+            <hr class="horizontal-left">
+            <span class="tag-text">STYLISH PICK</span>
+            <hr class="horizontal-right">
+        </div>
+        <div class="container">
+            <div class="accessories">
+                <img src="images/wallet.jpg" alt="wallet" class="accessories-img">
+                <div class="accessories-txt">
+                    ENVELOPE <br> PLEASE
+                    <br>
+                    <a href="#" class="accessories-a">CHIC CLUTCHES</a>
+                </div>
+            </div>
+            <div class="accessories">
+                <img src="images/shoes.jpg" alt="shoes" class="accessories-img">
+                <div class="accessories-txt">
+                    TAKE A <br> BOW <br>
+                    <a href="#" class="accessories-a">NEW SHOES</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="designer-dress">
+        <div class="title-tag">
+            <hr class="horizontal-left">
+            <span class="tag-text">LOOKS WE <i class="fa-solid fa-heart" style="color: red;"></i></span>
+            <hr class="horizontal-right">
+        </div>
+        <div class="container">
+            <img src="images/look_1.jpg" alt="look 1" class="look look1">
+            <img src="images/look_2.jpg" alt="look 2" class="look look2">
+            <img src="images/look_3.jpg" alt="look 3" class="look look3">
+            <img src="images/look_4.png" alt="look 4" class="look look4">
+        </div>
+    </section>
+
+    <footer class="footerbar">
+        <div class="container">
+            <div class="navigation">
+                <div class="Nname" style="margin-top: 20px;">NAVIGATION</div>
+                <ul class="nav-tool">
+                    <li class="nav-item"> HOME </li>
+                    <li class="nav-item"> ACCESSORIES </li>
+                    <li class="nav-item"> ABOUT US </li>
+                    <li class="nav-item"> SALE </li>
+                    <li class="nav-item"> DRESSES </li>
+                    <li class="nav-item" style="order: 9;"> CONTACT US </li>
+                    <li class="nav-item" style="order: 8;"> EVENING DRESSES </li>
+                    <li class="nav-item" style="order: 7;"> TERMS &amp; CONDITIONS </li>
+                    <li class="nav-item"> SHOES </li>
+                    <li class="nav-item"> PRIVACY POLICY </li>
+                </ul>
+            </div>
+            <div class="email-signup">
+                <div class="Nname">EMAIL SIGN UP</div>
+                <label for="mailid" class="footer-text">Please join email newsletter, Be informed of new stock, Sales
+                    etc..</label>
+                <br>
+                <input type="mail" id="mailid" placeholder="Your mail id">
+                <br>
+                <input type="submit" id="submit" value="SIGN UP">
+            </div>
+            <div class="connected">
+                <div class="Nname">GET CONNECTED</div>
+                <label class="footer-text">Fllow us to know our updates</label>
+                <div class="icon_container">
+                    <i class="icon fa-brands fa-facebook-square"></i>
+                    <i class="icon fa-brands fa-twitter-square"></i>
+                    <i class="icon fa-brands fa-pinterest-square"></i>
+                    <i class="icon fa-brands fa-youtube-square"></i>
+                    <i class="icon fa-brands fa-instagram-square"></i>
+                </div>
+                <div class="text">&#169; <sub>2013</sub> Sophisticada <br> Limitwd All Rights Reserved.</div>
+                <br>
+                <label class="footer-text">Website developed by <span
+                        style="color: white; font-size: 22px; margin-left: 2px;"> Webchoice UK </span></label>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav');
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</body>
+
+</html>
