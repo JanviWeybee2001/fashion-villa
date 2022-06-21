@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Navigation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        body {
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        nav {
+            height: 80px;
+            background-color: rgb(107, 160, 240);
+            width: 100%;
+            padding: 0 50px;
+        }
+
+        .logo {
+            line-height: 80px;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 5px;
+            line-height: 80px;
+        }
+
+        nav ul li a {
+            font-size: 22px;
+            color: white;
+            text-transform: uppercase;
+            padding: 0 5px;
+            border-radius: 5px;
+        }
+
+        a.active, a:hover {
+            background-color: rgb(124, 198, 233);
+            transition: .5s;
+        }
+
+        .checkbtn {
+            color: white;
+            font-size: 30px;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check {
+            display: none;
+        }
+
+        /* @media (max-width: 952px) 
+        {
+            label.logo {
+                font-size: 30px;
+                padding-left: 50px;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+        } */
+
+        @media (max-width: 800px) {
+            .checkbtn {
+                display: block;
+            }
+
+            ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: rgb(44, 43, 43);
+                top: 80px;
+                left: 0;
+                text-align: center;
+            }
+
+            nav ul li {
+                display: block;
+            }
+
+            a:hover, a.active {
+                background: none;
+                color: rgb(107, 160, 240);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <label class="logo">Fashionvilla</label>
+        <ul class="navbar"> 
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        const toggleButton = document.getElementsByClassName('checkbtn');
+
+
+    </script>
+</body>
+</html>

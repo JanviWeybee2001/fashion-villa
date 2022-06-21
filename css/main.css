@@ -11,17 +11,17 @@ body {
   height: 200px;
   margin-bottom: 40px;
 }
-.navbar nav ul {
+.navbar ul {
   display: flex;
   justify-content: space-around;
 }
-.navbar nav ul li a {
+.navbar ul li a {
   list-style-type: none;
   font-size: 30px;
   text-decoration: none;
   color: white;
 }
-.navbar nav ul li a:hover {
+.navbar ul li a:hover {
   color: #C29050;
 }
 .navbar .mobile-menu {
@@ -54,14 +54,14 @@ body {
   color: #858282;
 }
 
-.hero .container {
+.main-container .container {
   display: flex;
   box-sizing: border-box;
 }
-.hero .container .hero-img {
+.main-container .container .main-container-img {
   width: 40%;
 }
-.hero .container .hero-tag {
+.main-container .container .main-container-tag {
   margin: 14%;
   margin-left: 20%;
   font-size: 150px;
@@ -70,7 +70,7 @@ body {
   font-family: cursive;
   text-shadow: 10px 7px rgb(66, 65, 65);
 }
-.hero .container .hero-tag span {
+.main-container .container .main-container-tag span {
   color: #C29050;
 }
 
@@ -94,6 +94,7 @@ body {
 }
 .stylish-pick .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
 }
@@ -149,31 +150,31 @@ body {
   width: 100%;
 }
 
-.footerbar .container {
+footer .container {
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 1fr;
   padding: 25px;
   gap: 100px;
 }
-.footerbar .container .Nname {
+footer .container .Nname {
   color: #646464;
   margin-bottom: 30px;
   font-size: 30px;
 }
-.footerbar .container .nav-tool {
+footer .container .nav-tool {
   color: white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.footerbar .container .nav-tool .nav-item {
+footer .container .nav-tool .nav-item {
   padding-bottom: 25px;
   font-size: 20px;
 }
-.footerbar .container .footer-text {
+footer .container .footer-text {
   color: #646464;
   font-size: 25px;
 }
-.footerbar .container #mailid {
+footer .container #mailid {
   width: 86%;
   height: 40px;
   font-size: 20px;
@@ -183,7 +184,7 @@ body {
   padding-left: 10px;
   border: none;
 }
-.footerbar .container #submit {
+footer .container #submit {
   color: white;
   background-color: #C29050;
   margin-top: 30px;
@@ -192,17 +193,17 @@ body {
   font-variant: small-caps;
   letter-spacing: 1px;
 }
-.footerbar .container .icon_container {
+footer .container .icon_container {
   color: white;
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
   gap: 3px;
 }
-.footerbar .container .icon_container .icon {
+footer .container .icon_container .icon {
   font-size: 60px;
 }
-.footerbar .container .text {
+footer .container .text {
   color: #646464;
   text-align: right;
   font-size: 25px;
@@ -227,6 +228,13 @@ body {
   .navbar ul li a:hover {
     color: #C29050;
   }
+
+  footer .container {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    padding: 25px;
+    gap: 100px;
+  }
 }
 @media only screen and (min-width: 1080px) {
   .offer-menu .container .menu {
@@ -241,56 +249,56 @@ body {
     color: #858282;
   }
 
-  .footerbar .container {
+  footer .container {
     display: flex;
     padding: 55px;
     justify-content: center;
     text-align: center;
     flex-direction: column;
   }
-  .footerbar .container .Nname {
+  footer .container .Nname {
     margin-bottom: 30px;
     font-size: 45px;
   }
-  .footerbar .container .nav-tool {
+  footer .container .nav-tool {
     display: flex;
     flex-wrap: wrap;
     padding-left: 20px;
     justify-content: center;
   }
-  .footerbar .container .nav-tool .nav-item {
+  footer .container .nav-tool .nav-item {
     padding: 20px 60px 60px;
     font-size: 30px;
     list-style-type: none;
   }
-  .footerbar .container .footer-text {
+  footer .container .footer-text {
     color: #646464;
     font-size: 40px;
   }
-  .footerbar .container #mailid {
+  footer .container #mailid {
     width: 25%;
     height: 50px;
     font-size: 30px;
     margin-top: 20px;
     padding-left: 10px;
   }
-  .footerbar .container #submit {
+  footer .container #submit {
     margin-top: 30px;
     font-size: 32px;
     padding: 30px;
     letter-spacing: 2px;
     margin-bottom: 40px;
   }
-  .footerbar .container .icon_container {
+  footer .container .icon_container {
     display: flex;
     justify-content: center;
     margin: 30px 0;
     gap: 30px;
   }
-  .footerbar .container .icon_container .icon {
+  footer .container .icon_container .icon {
     font-size: 100px;
   }
-  .footerbar .container .text {
+  footer .container .text {
     font-size: 35px;
     text-align: center;
   }
