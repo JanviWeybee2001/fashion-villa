@@ -44,14 +44,15 @@ body {
                 cursor: pointer;
             }
 
+        
+
             .primary-nav {
                 float: right;
                 margin-right: 0;
                 font-weight: bold;
+                display: none;
 
                 li {
-                    // display: block;
-                    display: none;
                     margin: 0 5px;
                     line-height: 100px;
 
