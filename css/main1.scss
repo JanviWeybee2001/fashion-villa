@@ -328,7 +328,7 @@ footer {
             .nav-item {
                 padding-bottom: 25px;
                 font-size: 13px;
-                text-align: center;
+                text-align: left;
             }
         }
 
@@ -541,6 +541,7 @@ footer {
             .nav-tool {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
+                text-align: left;
 
                 .nav-item {
                     padding-bottom: 20px;
@@ -552,6 +553,7 @@ footer {
 
             .footer-text {
                 font-size: 30px;
+                text-align: left;
             }
 
             #mailid {
@@ -593,10 +595,6 @@ footer {
         width: 100%;
         padding: 20px;
     }
-
-    // .logo {
-    //     margin-left: 14%;
-    // }
 
     .navbar nav {
         display: flex;
@@ -652,6 +650,23 @@ footer {
             padding: 25px;
             gap: 100px;
 
+            .email-signup {
+                text-align: left;
+
+                #submit {
+                    margin-top: 10px;
+
+                }
+
+            }
+
+            .connected {
+                .footer-text {
+                    text-align: left;
+                }
+            }
+            
+
             .nav-tool {
                 color: white;
                 display: grid;
@@ -660,6 +675,7 @@ footer {
                 .nav-item {
                     padding-bottom: 25px;
                     font-size: 20px;
+                    text-align: left;
                 }
             }
 
