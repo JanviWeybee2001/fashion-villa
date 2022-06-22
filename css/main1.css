@@ -15,49 +15,69 @@ body {
   background-color: black;
   font-family: "Times New Roman", Times, serif;
 }
-body .navbar .container {
-  width: 100%;
-  height: 100px;
-  padding: 0 10px;
-  align-items: center;
+body .navbar {
+  padding: 1em;
 }
-body .navbar .container .logo {
-  margin-left: 30px;
-}
-body .navbar .container .logo a {
+body .navbar .logo {
   font-size: 65px;
   line-height: 100px;
   text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
 }
-body .navbar .container .check {
+body .navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+body .navbar .container .mobile-menu {
+  background-color: #fff;
   color: var(--secondary-color);
-  line-height: 100px;
-  font-size: 45px;
-  float: right;
-  margin-right: 30px;
+  margin-top: 40px;
+  height: 20px;
+  margin-right: 7%;
+}
+body .navbar .mobile-menu {
   cursor: pointer;
 }
-body .navbar .container .primary-nav {
-  float: right;
-  margin-right: 0;
-  font-weight: bold;
-  display: none;
+body .navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-body .navbar .container .primary-nav li {
+body nav.menu-btn {
+  display: block;
+}
+body nav {
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  padding: 1em;
+}
+body nav ul.primary-nav {
+  margin-top: 5em;
+}
+body nav li {
   margin: 0 5px;
   line-height: 100px;
 }
-body .navbar .container .primary-nav li a {
+body nav li a {
   font-size: 25px;
   color: var(--secondary-color);
   padding: 0 5px;
   border-radius: 5px;
   text-decoration: none;
+  font-weight: bold;
 }
-body .navbar .container .primary-nav li a:hover {
+body nav li a:hover {
   color: var(--primary-color);
+}
+body .mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
 }
 
 .offer-menu .container {
@@ -242,28 +262,9 @@ footer .container .text {
 }
 
 @media only screen and (min-width: 320px) {
-  .check {
-    display: block;
-  }
-
-  .logo a {
-    font-size: 25px;
-  }
-
-  nav.menu-btn {
-    display: block;
-  }
-
-  .primary-nav {
-    position: fixed;
-    width: 70%;
-    height: 100vh;
-    top: 100px;
-    right: 0;
-    text-align: center;
-  }
-  .primary-nav li {
-    display: block;
+  nav {
+    display: none;
+    background-color: var(--public-color);
   }
 
   .stylish-pick .container {
@@ -295,23 +296,9 @@ footer .container .text {
   }
 }
 @media only screen and (min-width: 938px) {
-  .navbar .container {
-    text-align: center;
-  }
-  .navbar .container .check {
-    display: none;
-  }
-  .navbar .container .logo {
+  .offer-menu .horizontal-line {
     display: block;
   }
-  .navbar .container .primary-nav {
-    float: none;
-  }
-  .navbar .container .primary-nav li {
-    display: inline-block;
-    margin-top: -40px;
-  }
-
   .offer-menu .container {
     display: flex;
     justify-content: space-around;
@@ -334,11 +321,9 @@ footer .container .text {
 
   .stylish-pick .title-tag .horizontal-left {
     width: 40%;
-    margin: 20px 0 20px 10%;
   }
   .stylish-pick .title-tag .horizontal-right {
     width: 40%;
-    margin: 20px 10% 20px 0;
   }
   .stylish-pick .title-tag .tag-text {
     font-size: 25px;
@@ -346,14 +331,14 @@ footer .container .text {
   }
   .stylish-pick .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
   }
   .stylish-pick .container .accessories {
     position: relative;
     text-align: center;
     color: black;
-    width: 50%;
+    width: 47%;
     height: 500px;
   }
   .stylish-pick .container .accessories .accessories-txt {
@@ -372,12 +357,10 @@ footer .container .text {
   }
 
   .designer-dress .title-tag .horizontal-left {
-    width: 35%;
-    margin: 20px 0 20px 10%;
+    width: 40%;
   }
   .designer-dress .title-tag .horizontal-right {
-    width: 35%;
-    margin: 20px 10% 20px 0;
+    width: 40%;
   }
   .designer-dress .title-tag .tag-text {
     font-size: 25px;
@@ -428,39 +411,44 @@ footer .container .text {
   }
 }
 @media only screen and (min-width: 1080px) {
-  .navbar .container {
-    text-align: left;
-  }
-  .navbar .container a {
-    margin-left: 15%;
-  }
-  .navbar .container .check {
+  .mobile-menu,
+.mobile-menu-exit {
     display: none;
   }
-  .navbar .container .primary-nav {
-    float: right;
-    margin-right: 30px;
+
+  .navbar .container {
+    width: 100%;
+    padding: 20px;
   }
-  .navbar .container .primary-nav li {
-    display: inline-block;
-    margin: 0 10px;
-    line-height: 100px;
+
+  .navbar nav {
+    display: flex;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    background-color: black;
+    justify-content: flex-end;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav ul li {
+    padding: 0 5px;
+  }
+  .navbar nav a {
+    color: var(--secondary-color);
+    font-size: 20px;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
   }
 
   .horizontal-line {
     display: none;
-  }
-
-  .offer-menu .container {
-    margin: 0 10%;
-  }
-
-  .main-container .container {
-    margin: 0 30%;
-  }
-
-  .stylish-pick {
-    margin: 0 10%;
   }
 
   .designer-dress .container {

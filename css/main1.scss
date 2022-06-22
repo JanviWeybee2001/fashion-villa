@@ -15,61 +15,136 @@ body {
     background-color: black;
     font-family: 'Times New Roman', Times, serif;
 
+    // .navbar {
+    //     .container {
+    //         width: 100%;
+    //         padding: 0 10px;
+
+    //         .logo {
+    //             margin-left: 30px;
+
+    //             a {
+    //                 font-size: 65px;
+    //                 line-height: 100px;
+    //                 text-decoration: none;
+    //                 color: var(--primary-color);
+    //                 font-weight: bold;
+
+    //             }
+    //         }
+
+    //         .check {
+    //             color: var(--secondary-color);
+    //             line-height: 100px;
+    //             font-size: 45px;
+    //             float: right;
+    //             cursor: pointer;
+    //         }
+
+
+    //         .primary-nav {
+    //             font-weight: bold;
+    //             color: var(--secondary-color);
+    //             background-color: black;
+    //             height: fit-content;
+    //             display: block;
+
+    // li {
+    //     margin: 0 5px;
+    //     line-height: 100px;
+
+    //     a {
+    //         font-size: 25px;
+    //         color: var(--secondary-color);
+    //         padding: 0 5px;
+    //         border-radius: 5px;
+    //         text-decoration: none;
+
+    //         &:hover {
+    //             color: var(--primary-color);
+    //         }
+    //     }
+    // }
+    //         }
+    //     }
+    // }
+
     .navbar {
+        padding: 1em;
+
+        .logo {
+            font-size: 65px;
+            line-height: 100px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
         .container {
-            width: 100%;
-            height: 100px;
-            padding: 0 10px;
-            align-items: center;
+            display: flex;
+            place-content: space-between;
 
-            .logo {
-                margin-left: 30px;
-
-                a {
-                    font-size: 65px;
-                    line-height: 100px;
-                    text-decoration: none;
-                    color: var(--primary-color);
-                    font-weight: bold;
-
-                }
-            }
-
-            .check {
+            .mobile-menu {
+                background-color: #fff;
                 color: var(--secondary-color);
-                line-height: 100px;
-                font-size: 45px;
-                float: right;
-                margin-right: 30px;
-                cursor: pointer;
+                margin-top: 40px;
+                height: 20px;
+                margin-right: 7%;
             }
+        }
 
-        
+        .mobile-menu {
+            cursor: pointer;
+        }
 
-            .primary-nav {
-                float: right;
-                margin-right: 0;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+        }
+    }
+
+    nav.menu-btn {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        z-index: 999;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        padding: 1em;
+
+        ul.primary-nav {
+            margin-top: 5em;
+        }
+
+        li {
+            margin: 0 5px;
+            line-height: 100px;
+
+            a {
+                font-size: 25px;
+                color: var(--secondary-color);
+                padding: 0 5px;
+                border-radius: 5px;
+                text-decoration: none;
                 font-weight: bold;
-                display: none;
 
-                li {
-                    margin: 0 5px;
-                    line-height: 100px;
-
-                    a {
-                        font-size: 25px;
-                        color: var(--secondary-color);
-                        padding: 0 5px;
-                        border-radius: 5px;
-                        text-decoration: none;
-
-                        &:hover {
-                            color: var(--primary-color);
-                        }
-                    }
+                &:hover {
+                    color: var(--primary-color);
                 }
             }
         }
+    }
+
+    .mobile-menu-exit {
+        float: right;
+        margin: .5em;
+        cursor: pointer;
     }
 }
 
@@ -302,35 +377,16 @@ footer {
 }
 
 @media only screen and (min-width:320px) {
-    .check {
-        display: block;
+
+
+    nav {
+        display: none;
+        background-color: var(--public-color);
     }
 
-    .logo {
-        a {
-            font-size: 25px;
-        }
-    }
-
-    nav.menu-btn {
-        display: block;
-    }
-
-    .primary-nav {
-        position: fixed;
-        width: 70%;
-        height: 100vh;
-        // background-color: rgb(44, 43, 43);
-        top: 100px;
-        right: 0;
-        text-align: center;
-
-        li {
-            display: block;
-        }
-    }
 
     .stylish-pick {
+
         .container {
             display: flex;
             flex-wrap: wrap;
@@ -367,31 +423,12 @@ footer {
 
 
 @media only screen and (min-width: 938px) {
-    .navbar {
-        .container {
-            text-align: center;
-
-            .check {
-                display: none;
-            }
-
-            .logo {
-                display: block;
-            }
-
-            .primary-nav {
-                float: none;
-
-                li {
-                    display: inline-block;
-                    margin-top: -40px;
-                }
-            }
-        }
-    }
-
 
     .offer-menu {
+        .horizontal-line
+        {
+            display: block;
+        }
 
         .container {
             display: flex;
@@ -425,12 +462,10 @@ footer {
 
             .horizontal-left {
                 width: 40%;
-                margin: 20px 0 20px 10%;
             }
 
             .horizontal-right {
                 width: 40%;
-                margin: 20px 10% 20px 0;
             }
 
             .tag-text {
@@ -441,14 +476,14 @@ footer {
 
         .container {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             width: 100%;
 
             .accessories {
                 position: relative;
                 text-align: center;
                 color: black;
-                width: 50%;
+                width: 47%;
                 height: 500px;
 
                 .accessories-txt {
@@ -475,15 +510,12 @@ footer {
         .title-tag {
 
             .horizontal-left {
-                width: 35%;
-                margin: 20px 0 20px 10%;
+                width: 40%;
             }
 
             .horizontal-right {
-                width: 35%;
-                margin: 20px 10% 20px 0;
+                width: 40%;
             }
-
             .tag-text {
                 font-size: 25px;
                 margin-top: 5px;
@@ -552,52 +584,54 @@ footer {
 
 @media only screen and (min-width: 1080px) {
 
+    .mobile-menu,
+    .mobile-menu-exit {
+        display: none;
+    }
 
-    .navbar {
-        .container {
-            text-align: left;
+    .navbar .container {
+        width: 100%;
+        padding: 20px;
+    }
 
-            a {
-                margin-left: 15%;
-            }
+    // .logo {
+    //     margin-left: 14%;
+    // }
 
-            .check {
-                display: none;
-            }
+    .navbar nav {
+        display: flex;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        background-color: black;
+        justify-content: flex-end;
 
-            .primary-nav {
-                float: right;
-                margin-right: 30px;
+        ul {
+            display: flex;
 
-                li {
-                    display: inline-block;
-                    margin: 0 10px;
-                    line-height: 100px;
-                }
+            li {
+                padding: 0 5px;
             }
         }
+
+        a {
+            color: var(--secondary-color);
+            font-size: 20px;
+        }
+
+        ul.primary-nav {
+            margin: 0;
+        }
+
+        li.current a {
+            font-weight: bold;
+        }
+
     }
 
     .horizontal-line {
         display: none;
-    }
-
-    .offer-menu {
-        .container {
-            margin: 0 10%;
-        }
-
-    }
-
-    .main-container {
-        .container {
-            margin: 0 30%;
-        }
-    }
-
-    .stylish-pick {
-        margin: 0 10%;
-
     }
 
     .designer-dress {
@@ -622,7 +656,7 @@ footer {
                 color: white;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-    
+
                 .nav-item {
                     padding-bottom: 25px;
                     font-size: 20px;
